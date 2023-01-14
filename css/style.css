@@ -1,0 +1,245 @@
+/* Work Sons Font  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Work+Sans:wght@400;500&display=swap");
+
+/* Universal CSS Style  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+/* -----------------------------------------------------
+        Common  Style CSS
+----------------------------------------------------- */
+:root {
+  --text-black: #131313;
+  --primary-clr: #ff900e;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  color: #727272;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+.button a {
+  background-color: var(--primary-clr);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 12px;
+}
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+span {
+  color: var(--primary-clr);
+  font-weight: 700;
+}
+b {
+  color: black;
+  font-weight: 700;
+}
+/* -----------------------------------------------------
+        Header Section Style 
+----------------------------------------------------- */
+
+/* Nav Section Style  */
+header {
+  padding: 50px 15%;
+  background: rgba(255, 144, 14, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--text-black);
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 18px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ff900e;
+  transition: 0.5s;
+}
+.menu ul li a:hover:after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* Banner Section Start  */
+.banner-title {
+  width: 65%;
+  margin: 100px auto 50px;
+  text-align: center;
+}
+.banner-title h1 {
+  font-size: 64px;
+}
+.banner-title p {
+  margin: 40px 0 33px;
+}
+/* -----------------------------------------------------
+        Main Section Style CSS
+----------------------------------------------------- */
+.features_section {
+  margin: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+.feature-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature-info h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #727272;
+}
+.feature-info p {
+  margin: 24px 0 50px;
+}
+/* Features Section Style CSS */
+.best_features {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 140px;
+}
+.desc-title h1 {
+  font-size: 40px;
+  border-left: 5px solid var(--primary-clr);
+  padding-left: 20px;
+}
+.desc-title p {
+  margin: 24px 0 30px;
+}
+.desc-details {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 15px 15px 15px 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.desc-details h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.best_features--img {
+  position: relative;
+}
+.experience-card {
+  position: absolute;
+  padding: 36px;
+  background-color: var(--primary-clr);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 36px;
+  bottom: -12%;
+  left: -20%;
+  border-radius: 8px;
+}
+.experience-card p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+}
+/* -----------------------------------------------------
+        Responsive Media Queries 
+----------------------------------------------------- */
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  /* common style  */
+  .button a {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+  p {
+    font-size: 15px;
+  }
+  main {
+    width: 80%;
+  }
+
+  /* nav section */
+  .logo h2 {
+    font-size: 20px;
+  }
+  .menu ul {
+    gap: 10px;
+    flex-direction: column;
+  }
+  nav {
+    align-items: start;
+  }
+  header {
+    padding: 0px 10%;
+  }
+
+  /* Banner Style */
+
+  .banner-title {
+    width: 100%;
+    margin: 70px auto 35px;
+  }
+  .banner-title h1 {
+    font-size: 31px;
+  }
+  .banner-title p {
+    margin: 30px 0 30px;
+  }
+
+  /* features section  */
+  .features_section {
+    grid-template-columns: 1fr;
+  }
+  .feature-img {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .feature-info h1 {
+    font-size: 36px;
+  }
+}
