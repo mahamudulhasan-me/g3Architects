@@ -24,6 +24,7 @@ p {
 img {
   width: 100%;
   height: auto;
+  transition: 0.8s;
 }
 h1,
 h2 {
@@ -39,7 +40,7 @@ h2 {
   padding: 10px 12px;
 }
 main {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 span {
@@ -49,6 +50,19 @@ span {
 b {
   color: black;
   font-weight: 700;
+}
+.section-title {
+  width: 50%;
+}
+.section-title h2 {
+  font-weight: 700;
+  font-size: 45px;
+  border-left: 5px solid var(--primary-clr);
+  color: var(--text-black);
+  padding-left: 10px;
+}
+.section-title p {
+  margin: 24px 0 70px;
 }
 /* -----------------------------------------------------
         Header Section Style 
@@ -98,7 +112,6 @@ nav {
 
 /* Banner Section Start  */
 .banner-title {
-  width: 65%;
   margin: 100px auto 50px;
   text-align: center;
 }
@@ -106,18 +119,19 @@ nav {
   font-size: 64px;
 }
 .banner-title p {
-  margin: 40px 0 33px;
+  width: 65%;
+  margin: 40px auto 33px;
 }
 /* -----------------------------------------------------
         Main Section Style CSS
 ----------------------------------------------------- */
 .features_section {
-  margin: 80px 0;
+  width: 90%;
+  margin: 80px auto;
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   gap: 70px;
   align-items: center;
-  justify-content: center;
 }
 .feature-img {
   display: grid;
@@ -132,9 +146,79 @@ nav {
 .feature-info p {
   margin: 24px 0 50px;
 }
+/* interiors design style  */
+.interiors-design {
+  margin: 120px 0 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.interior-img1 {
+  position: relative;
+  overflow: hidden;
+}
+.interior-img2 {
+  position: relative;
+  top: -15%;
+  overflow: hidden;
+}
+.interior-img3 {
+  position: relative;
+  bottom: -17%;
+  overflow: hidden;
+}
+.interior-img1:hover img,
+.interior-img2:hover img,
+.interior-img3:hover img {
+  transform: scale(1.1) rotate(3deg);
+  transition: 0.5s;
+}
+.interior-img1-position {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.interior-img2-position {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+.interior-img3-position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.interior-img-overly {
+  width: 80%;
+  background-color: rgba(255, 143, 14, 0.165);
+  padding: 28px 5px 70px 12px;
+}
+.interior-img-overly h1 {
+  width: 80%;
+  font-weight: 500;
+}
+.interior-img-overly h2 {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-weight: 500;
+  color: var(--primary-clr);
+}
+.num-box {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: var(--text-black);
+  background-color: var(--primary-clr);
+}
+
 /* Features Section Style CSS */
 .best_features {
-  width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -185,7 +269,55 @@ nav {
   font-weight: 500;
   font-size: 25px;
 }
-/* -----------------------------------------------------
+/* some facts section style  */
+.some_facts_section {
+  margin: 80px 0 100px;
+}
+.which-facts {
+  display: flex;
+  justify-content: space-between;
+}
+.fact {
+  text-align: center;
+  border: 1px solid var(--primary-clr);
+  border-radius: 8px;
+  padding: 45px 35px;
+  color: #424242;
+  font-weight: 600;
+}
+.fact:hover .fact-img img {
+  transform: scale(1.3);
+  transition: 0.4s;
+}
+.fact-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.fact-desc h1 {
+  font-size: 36px;
+  margin: 10px 0 5px;
+}
+/* client and sponsor style  */
+.sponsor-img {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sponsor-img img {
+  width: 120px;
+  height: 40px;
+  filter: grayscale(1);
+}
+footer {
+  margin-top: 70px;
+  text-align: center;
+  padding: 25px;
+  background: rgba(255, 144, 14, 0.1);
+  color: #424242;
+}
+/* 
+-----------------------------------------------------
         Responsive Media Queries 
 ----------------------------------------------------- */
 /* Mobile Device */
