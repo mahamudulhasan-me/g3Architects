@@ -147,6 +147,7 @@ nav {
 }
 .feature-info p {
   margin: 24px 0 50px;
+  text-align: justify;
 }
 
 /* Features Section Style CSS */
@@ -164,6 +165,7 @@ nav {
 }
 .desc-title p {
   margin: 24px 0 30px;
+  text-align: justify;
 }
 .desc-details {
   background: #ffffff;
