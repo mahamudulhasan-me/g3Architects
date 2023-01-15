@@ -67,10 +67,10 @@ b {
   margin: 24px 0 70px;
 }
 /* -----------------------------------------------------
-        Header Section Style 
+        Header Section CSS Style 
 ----------------------------------------------------- */
 
-/* Nav Section Style  */
+/* Nav Section Style CSS  */
 header {
   padding: 50px 15%;
   background: rgba(255, 144, 14, 0.1);
@@ -112,7 +112,7 @@ nav {
   transition: 0.4s;
 }
 
-/* Banner Section Start  */
+/* Banner Section Style CSS  */
 .banner-title {
   margin: 100px auto 50px;
   text-align: center;
@@ -201,7 +201,7 @@ nav {
   font-weight: 500;
   font-size: 25px;
 }
-/* some facts section style  */
+/* some facts section style css  */
 .some_facts_section {
   margin: 80px 0 100px;
 }
@@ -235,7 +235,7 @@ nav {
   font-size: 36px;
   margin: 10px 0 5px;
 }
-/* interiors design style  */
+/* interiors design style css */
 .interior-design-section {
   margin: 120px 0 160px;
 }
@@ -314,7 +314,7 @@ nav {
   background-color: var(--primary-clr);
 }
 
-/* client and sponsor style  */
+/* client and sponsor style css */
 .sponsor-img {
   display: flex;
   justify-content: space-between;
@@ -335,6 +335,7 @@ footer {
 -----------------------------------------------------
         Responsive Media Queries 
 ----------------------------------------------------- */
+
 /* Tablet Device  */
 @media screen and (min-width: 577px) and (max-width: 768px) {
   /* common style  */
