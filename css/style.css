@@ -306,7 +306,6 @@ nav {
 }
 .sponsor-img img {
   width: 120px;
-  height: 40px;
   filter: grayscale(1);
 }
 footer {
@@ -334,7 +333,9 @@ footer {
   main {
     width: 80%;
   }
-
+  .section-title {
+    width: 100%;
+  }
   /* nav section */
   .logo h2 {
     font-size: 20px;
@@ -345,6 +346,7 @@ footer {
   }
   nav {
     align-items: start;
+    padding-top: 30px;
   }
   header {
     padding: 0px 10%;
@@ -361,6 +363,7 @@ footer {
   }
   .banner-title p {
     margin: 30px 0 30px;
+    width: 100%;
   }
 
   /* features section  */
@@ -373,5 +376,38 @@ footer {
   }
   .feature-info h1 {
     font-size: 36px;
+  }
+
+  /* Interior design style  */
+  .interiors-design {
+    margin: 80px 0 60px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: -5;
+  }
+  .interior-img2 {
+    top: 0%;
+  }
+  .interior-img3 {
+    bottom: 0%;
+  }
+  .best_features {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .experience-card {
+    padding: 30px;
+    font-weight: 700;
+    font-size: 26px;
+    bottom: -14%;
+    left: -13%;
+  }
+  /* some facts section  */
+  .which-facts {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sponsor-img {
+    justify-content: space-evenly;
+    gap: 20px;
   }
 }
